@@ -558,6 +558,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#scanusingindex" title="scan.using(index)" class="md-nav__link">
+    scan.using(index)
+  </a>
+  
+</li>
+      
       
       
       
@@ -765,6 +772,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#scanusingindex" title="scan.using(index)" class="md-nav__link">
+    scan.using(index)
+  </a>
+  
+</li>
+      
       
       
       
@@ -887,6 +901,10 @@ Dog.scan(filter).exec()
 <p>If you used a filter in the scan, then <code>count</code> is the number of items returned after the filter was applied, and <code>scannedCount</code> is the number of matching items before the filter was applied.</p>
 <h3 id="scanconsistent">scan.consistent()</h3>
 <p>Scan with consistent read.</p>
+<h3 id="scanusingindex">scan.using(index)</h3>
+<p>Scan can be performed on a <a href="https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-indexes-general-sparse-indexes.html">sparse index</a> instead of the entire table. To scan an index you have to manually specify which index to use by adding the <code>scan.using</code> method to your scan chain. The string you pass into the <code>scan.using</code> method must match the name of an index on your table. Unlike query, this method is required for index scanning.</p>
+<pre><code class="js">Dog.scan().using('BreedRangeIndex').where('breed').beginsWith('Sp')
+</code></pre>
                 
                   
                 
