@@ -201,7 +201,7 @@ If an object is passed in it must have a validator property that is a function. 
 }
 ```
 
-**Running any Dynamoose method that calls the `validate` method indirectly from within the `validate` method will cause an infinate loop.**
+**Running any Dynamoose method that calls the `validate` method indirectly from within the `validate` method will cause an infinite loop.**
 
 The property name `validate` is also an alias for `validator`. The property name `validator` will take priority if both are passed in.
 
