@@ -61,4 +61,4 @@ The Dynamoose Roadmap can be found in the [ROADMAP.md](//github.com/dynamoosejs/
 
 ## Contributing
 
-To contirubute to this project please checkout our [CONTRIBUTING.md](//github.com/dynamoosejs/dynamoose/blob/master/CONTRIBUTING.md) file.
+To contribute to this project please checkout our [CONTRIBUTING.md](//github.com/dynamoosejs/dynamoose/blob/master/CONTRIBUTING.md) file.
